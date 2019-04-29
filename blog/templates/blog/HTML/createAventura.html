@@ -1,0 +1,17 @@
+{% extends 'blog/HTML/base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+	<div id= "formPost">
+		<form method="POST">{% csrf_token %}
+			 
+			 	<legend>Criar Aventura</legend>
+			{{aventuraForm.as_p}}
+			
+
+			<button type="submit">Save</button>
+		</form>
+	</div>
+
+
+{% endblock %}

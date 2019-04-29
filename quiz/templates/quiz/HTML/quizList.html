@@ -1,0 +1,19 @@
+{% extends 'quiz/HTML/base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+
+	<div id = 'categoria'>
+			<h2>Quiz</h2>
+		</div>
+	{% for quiz in quizs %}
+	<a href="{% url 'quiz:fazerQuiz' pkQuiz=quiz.pk %}">
+		<div id="conteudo">					
+			<h1>{{quiz.title}}</h1>
+			<p>{{quiz.create_date}}</p>
+			<p>{{quiz.author}}</p>
+		</div>
+	</a>	
+
+	{% endfor %}
+{% endblock %}

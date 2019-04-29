@@ -1,0 +1,14 @@
+{% extends 'blog/HTML/base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+	<form method="POST">{% csrf_token %}
+		
+		
+
+		<button type="submit">save</button>
+	</form>
+
+
+
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends 'blog/HTML/base.html' %}
+{% load staticfiles %}
+
+	{% block content %}
+		<div id = 'categoria'>
+			<h2>{{categoria}}</h2>
+		</div>
+
+		{% for post in posts %}
+			<a href="{% url 'blog:postRead' pk=post.pk %}">
+				<div id="conteudo">
+					<h1>Titulo: {{post.title}}</h1>
+					<p>{{post.create_date}}</p>
+					<p>Autor: {{post.author}}</p>
+
+				</div>
+			</a>
+		{% endfor %}
+
+	
+	{% endblock %}

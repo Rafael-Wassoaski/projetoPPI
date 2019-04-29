@@ -1,0 +1,107 @@
+body{
+	background-image: url('../img/background.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	font-family: 'Germania One', cursive;
+}
+
+.title{
+	font-size: 20px;
+	color: orange;
+}
+
+.pontosMostrar{
+	
+	color: white;
+}
+
+#pergunta{
+	padding-bottom: 20px;
+	font-family: 'Germania One', cursive;
+}
+
+#pergunta h3{
+	font-family: 'Germania One', cursive;
+
+}
+
+
+
+#conteudo:hover{
+	border-color: orange;
+}
+
+#conteudo{
+
+	background-color: black;
+	opacity: 0.9;
+	padding-left: 10px;
+	padding-top: 3px;
+	margin-top: 10px;
+	margin-left: 25%;
+	width: 50%;
+	border-style: outset;
+	text-align: left;
+
+
+	
+}
+
+#conteudo h1{
+	font-family: 'Germania One', cursive;
+}
+
+#date{
+	text-align: right;
+}
+
+header h1{
+	background-color: white;
+	text-align: center;
+}
+
+
+#post{
+	background-color: white;
+	border-style: solid;
+	border-color: black;
+	width: 50%;
+	margin-left: 2%;
+	padding-left: 20px;
+	padding-bottom: 5px;
+
+
+}
+
+.mdl-textfield__input{
+	font-family: 'Germania One', cursive;
+}
+
+#respostas{
+
+	border-style: double;
+	border-color: black;
+	border:3px solid orange;
+	padding-left: 10px;
+	margin-right: 20px;
+	margin-bottom: 10px;
+	padding-bottom: 5px;
+
+
+}
+
+.respostaResposta{
+	margin-top: 10px;
+	margin-left: 25px;
+	border-style: solid;
+	border-color: orange;
+	padding-left: 10px;
+	margin-right: 20px;
+}
+
+
+
+
+
+

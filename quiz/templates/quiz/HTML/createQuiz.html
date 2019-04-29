@@ -1,0 +1,20 @@
+{% extends 'quiz/HTML/base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+<div id= "formPost">
+	<form method="POST">{% csrf_token %}
+		<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+			<p>Título: {{quizForm.title}}</p>
+			<p>Descrição: {{quizForm.descricao}}</p>
+			<p>Número de Perguntas: {{quizForm.numPerguntas}}</p>
+			
+		</div>
+		<br>
+		<button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" >Salvar</button>
+	</form>
+</div>
+
+
+
+{% endblock %}

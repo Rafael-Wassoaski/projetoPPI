@@ -1,0 +1,18 @@
+{% extends 'blog/HTML/base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+	{% for aventura in aventuras %}
+		<a href="{% url 'blog:aventura_details' pk=aventura.pk %}">
+			<div id = "conteudo">
+				<h1>{{aventura.titulo}}</h1>
+				<p>{{aventura.create_date}}</p>
+				<p>Gênero: {{aventura.genero}}</p>
+			</div>
+		</a>
+
+	{% endfor %}
+
+
+
+{% endblock %}

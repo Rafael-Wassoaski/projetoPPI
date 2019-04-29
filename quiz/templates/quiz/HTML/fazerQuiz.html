@@ -1,0 +1,28 @@
+{% extends 'quiz/HTML/base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+	<div id = "post">
+		<h2>Titulo: {{quiz.title}}</h2>
+
+		<h3>Descrição: {{quiz.descricao}}</h3>
+		
+		<form method="POST">{% csrf_token %}
+
+			{{respostasForm.management_form }}
+			{% for pergunta in perguntas %}
+
+			<div id='pergunta'>
+				<h3>Pergunta: {{pergunta.pergunta}}</h3>
+
+
+				<input type="text" name= '{{pergunta.pergunta}}'>
+			</div>
+			
+			{% endfor %}
+		</br>
+		<button type="submit">Responder</button>
+	</form>
+	</div>
+
+{% endblock %}

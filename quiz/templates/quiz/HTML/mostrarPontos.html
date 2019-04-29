@@ -1,0 +1,13 @@
+{% extends 'quiz/HTML/base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+	<a href="{% url 'quiz:quizList' %}">
+		<div id = "conteudo">
+			<p id="pontosMostrar">Pontos: {{pontos}}</p>
+			<p id = "botaoVoltar">Voltar a lista</p>
+
+		</div>
+	</a>
+
+{% endblock %}

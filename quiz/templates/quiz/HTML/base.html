@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="Dices & Dragons" />
+		<meta name="keywords" content="RPG, fórum, fórum de RPG, Personagens, Quiz" />
+		<meta name="robots" content="index,follow" />
+		<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.grey-deep_orange.min.css" /> 
+		<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Germania+One" rel="stylesheet"> 
+		<link rel="stylesheet" href="{% static 'css/global.css' %}">
+		<title>Dices & Dragons</title>
+
+	</head>
+<body>
+
+	
+	<div class="mdl-layout mdl-js-layout">
+		<header class="mdl-layout__header mdl-layout__header--scroll">
+			<div class="mdl-layout__header-row">
+				
+				<a href="{% url 'quiz:quizList' %}">
+					<span class="title">Dices & Dragons</span>
+				</a>
+			
+				<div class="mdl-layout-spacer"></div>
+			
+				<nav class="mdl-navigation">
+					<a class="mdl-navigation__link" href="{% url 'quiz:CreateQuiz' %}">Criar Quiz</a>
+					<a class="mdl-navigation__link" href="{% url 'quiz:quizList' %}">Lista de Quiz</a>
+					<a class="mdl-navigation__link" href="{% url 'blog:post_list' %}">Blog</a>
+				
+				</nav>
+			</div>
+		</header>
+		<!-- <div class="mdl-layout__drawer">
+			<span class="mdl-layout-title">Dices & Dragons</span>
+			<nav class="mdl-navigation">
+				<a class="mdl-navigation__link" href="">Link</a>
+				<a class="mdl-navigation__link" href="">Link</a>
+				<a class="mdl-navigation__link" href="">Link</a>
+				<a class="mdl-navigation__link" href="">Link</a>
+			</nav>
+		</div> -->
+		
+		<main class="mdl-layout__content">
+			{% block content %}
+			{% endblock %}
+		</main>
+		
+		<footer class="mdl-mega-footer">
+			<div class="mdl-mega-footer__middle-section">
+
+				<div class="mdl-mega-footer__drop-down-section">
+					<input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+					<h1 class="mdl-mega-footer__heading">Features</h1>
+					<ul class="mdl-mega-footer__link-list">
+						<li><a href="#">About</a></li>
+						<li><a href="#">Terms</a></li>
+						<li><a href="#">Partners</a></li>
+						<li><a href="#">Updates</a></li>
+					</ul>
+				</div>
+
+				<div class="mdl-mega-footer__drop-down-section">
+					<input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+					<h1 class="mdl-mega-footer__heading">Details</h1>
+					<ul class="mdl-mega-footer__link-list">
+						<li><a href="#">Specs</a></li>
+						<li><a href="#">Tools</a></li>
+						<li><a href="#">Resources</a></li>
+					</ul>
+				</div>
+
+				<div class="mdl-mega-footer__drop-down-section">
+					<input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+					<h1 class="mdl-mega-footer__heading">Technology</h1>
+					<ul class="mdl-mega-footer__link-list">
+						<li><a href="#">How it works</a></li>
+						<li><a href="#">Patterns</a></li>
+						<li><a href="#">Usage</a></li>
+						<li><a href="#">Products</a></li>
+						<li><a href="#">Contracts</a></li>
+					</ul>
+				</div>
+
+				<div class="mdl-mega-footer__drop-down-section">
+					<input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+					<h1 class="mdl-mega-footer__heading">FAQ</h1>
+					<ul class="mdl-mega-footer__link-list">
+						<li><a href="#">Questions</a></li>
+						<li><a href="#">Answers</a></li>
+						<li><a href="#">Contact us</a></li>
+					</ul>
+				</div>
+
+			</div>
+
+			<div class="mdl-mega-footer__bottom-section">
+				<div class="mdl-logo">Title</div>
+				<ul class="mdl-mega-footer__link-list">
+					<li><a href="#">Help</a></li>
+					<li><a href="#">Privacy & Terms</a></li>
+				</ul>
+			</div>
+
+		</footer>
+		
+	</body>
+	</html>

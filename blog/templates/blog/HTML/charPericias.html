@@ -1,0 +1,15 @@
+{% extends 'blog/HTML/base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+	<form method="POST">{% csrf_token %}
+		
+		{{formPer.as_p}}
+		{{formPer.acrobacia}}
+
+		<button type="submit">Salvar</button>
+	</form>
+
+
+
+{% endblock %}

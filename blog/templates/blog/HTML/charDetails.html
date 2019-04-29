@@ -1,0 +1,59 @@
+{% extends 'blog/HTML/base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+	
+
+	<!-- <img src="{{char.rosto.url}}"> -->
+	<div id = "charDetails">
+		<div id = "detalhes">
+			<h3>Caracteristicas</h3>
+			<p>Nome: {{char.name}}</p>
+			<p>Classe: {{char.classe}}</p>
+			<p>Tamanho: {{char.tamanho}}</p>
+			<p>Raça: {{char.raca}}</p>
+			<p>Idade: {{char.idade}}</p>
+			<p>Sexo: {{char.sexo}}</p>
+			<p>Altura: {{char.altura}}</p>
+			<p>Peso: {{char.peso}}</p>
+			<p>Olhos: {{char.olhos}}</p>
+			<p>Cabelo: {{char.cabelo}}</p>
+			<p>Divindade: {{char.divindade}}</p>
+			<p>Tendencias: {{char.tendencia}}</p>
+			<p>Idiomas: {{char.idiomas}}</p>
+			<p>Força: {{char.forca}}</p>
+			<p>Constituição: {{char.constituicao}}</p>
+			<p>Destreza: {{char.destreza}}</p>
+			<p>Inteligência: {{char.inteligencia}}</p>
+			<p>Sabedoria: {{char.sabedoria}}</p>
+			<p>Carisma: {{char.carisma}}</p>
+			<p>Pontos de Vida:{{char.pontosDeVida}}</p>
+			<p>Iniciativa: {{char.iniciativa}}</p>
+			<p>Deslocamento: {{char.deslocamento}}</p>
+		</div>
+		<div id="detalhes">
+			<h3>Pericias</h3>
+			<p>Acrobacia: {{per.acrobacia}}</p>
+			<p>Atletismo: {{per.atletismo}}</p>
+			<p>Blefe: {{per.blefe}}</p>
+			<p>Diplomacia: {{per.diplomacia}}</p>
+			<p>Exploração: {{per.exploracao}}</p>
+			<p>Furtividade: {{per.furtividade}}</p>
+			<p>História: {{per.historia}}</p>
+			<p>Intimidação: {{per.intimidacao}}</p>
+			<p>Intuição: {{per.intuicao}}</p>
+			<p>Ladinagem: {{per.ladinagem}}</p>
+			<p>Manha: {{per.manha}}</p>
+			<p>Natureza: {{per.natureza}}</p>
+			<p>Percepção: {{per.percepcao}}</p>
+			<p>Religião: {{per.religiao}}</p>
+			<p>Socorro: {{per.socorro}}</p>
+			<p>Tolerância: {{per.tolerancia}}</p>
+		</div>
+		
+	<div>
+
+
+
+
+{% endblock %}

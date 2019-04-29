@@ -1,0 +1,26 @@
+{% extends 'blog/HTML/base.html' %}
+{% load staticfiles %}
+
+
+
+{% block content %}
+	{% for char in chars %}
+
+		<a href="{% url 'blog:charDetails' pk=char.pk %}">
+			<div id="conteudo">
+				
+				<h1>Nome: {{char.name}}</h1>
+				<p>Classe: {{char.classe}}</p>
+				<p>Autor:{{char.author}}</p>
+			
+
+			</div>
+
+
+		</a>
+
+	{% endfor %}
+
+
+
+{% endblock %}

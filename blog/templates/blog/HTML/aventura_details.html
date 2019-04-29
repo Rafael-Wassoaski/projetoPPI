@@ -1,0 +1,17 @@
+{% extends 'blog/HTML/base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+ <div id = "post">
+	<h1>{{aventura.titulo}}</h1>
+	<h4>Autor{{aventura.author}}</h4>
+	<p>{{aventura.aventura|linebreaksbr}}</p>
+	<p>{{aventura.genero}}</p>
+	<p>{{aventura.itens}}</p>
+	<p>{{aventura.numeroJogadores}}</p>
+	<p>{{aventura.npcs}}</p>
+</div>
+
+
+
+{% endblock %}
